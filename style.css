@@ -1,0 +1,225 @@
+body {
+    background-image: url(background/bck1.jpg);
+    font-family: Arial, sans-serif;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.menu-icon {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+}
+
+.navbar {
+    background: radial-gradient(#fff, #073e3e);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #110b0b;
+}
+.img{
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    border: none;
+}
+.content1{
+    margin-left: 20px;
+    color: #fff;
+    font-size: larger;
+}
+/*css for social media icons*/
+.contact{
+    margin: 20px;
+    height: 70px;
+    width: 50px;
+    color: rgb(241, 38, 38);
+    text-decoration: underline;
+}
+.twit{
+    margin: 20px;
+    color: black;
+}
+.mail{
+    margin: 20px;
+    height: 70px;
+    width: 50px;
+    color: rgb(241, 38, 38);
+}
+/*css for image slides*/
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+/*css for manual navigation*/
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #0dc0c0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #0dc0c0;
+}
+#radio1:checked~.first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -20%;
+}
+#radio3:checked~.first{
+    margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div{
+    border: 2px solid #0dc0c0;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked~.navigation-auto .auto-btn1{
+    background: #0dc0c0;
+}
+#radio2:checked~.navigation-auto .auto-btn2{
+    background: #0dc0c0;
+}
+#radio3:checked~.navigation-auto .auto-btn3{
+    background: #0dc0c0;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    justify-content: center;
+    align-self: center;
+    border: 2px solid #0dc0c0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #0dc0c0;
+}
+/*css for contact form*/
+.cont-form{
+    margin-left: 100px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.cont-form input{
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+}
+.cont-form input::placeholder{
+    color: #fff;
+}
+#name{
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+    border: 2px solid #0dc0c0;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+#mail{
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+    border: 2px solid #0dc0c0;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+#tel{
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+    border: 2px solid #0dc0c0;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+#message{
+    width: 350px;
+    margin-top: 10px;
+    border: 2px solid #0dc0c0;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+@media (max-width:800px){
+    .navbar{
+        width: 93vw;
+    }
+    .img{
+        width: 93vw;
+    }
+    .content1{
+        width: 80vw;
+    }
+}
